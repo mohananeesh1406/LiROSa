@@ -25,6 +25,12 @@ your_package/
 ├── config/
 │   ├── diff_drive_controllers.yaml
 │   └── slam_toolbox.yaml
+├── images/
+│   ├── gazebo world.png
+│   └── laser scan.png
+│   └── map after exploration.png
+│   └── occupancy grid.png
+│   └── robot urdf.png
 ├── launch/
 │   └── gazebo.launch.py
 ├── maps/
@@ -143,3 +149,25 @@ world_file = os.path.join(
 Replace `slam_world.sdf` with the filename of your custom world, keeping it inside the `worlds/` directory.4. Relaunch the simulation to load the modified environment.
 
 4. This allows the robot to explore and map different simulated environments without changing its core URDF model.
+
+## Visual Results
+
+### 1. Robot Model in RViz2
+
+![Robot URDF Model in RViz2](<images/robot urdf.png>)
+
+### 2. Robot Simulation in Gazebo
+
+![Differential Drive Robot in Gazebo](<images/gazebo world.png>)
+
+### 3. Laser Scan Visualization
+
+![Laser Scan in RViz2](<images/laser scan.png>)
+
+### 4. Initial Occupancy Grid Map
+
+![Initial Occupancy Grid Map](<images/occupancy grid.png>)
+
+### 5. Occupancy Grid Map After Exploration
+
+![Post exploration Occupancy Grid Map](<images/map after exploration.png>)
